@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,109,1) 35%, rgba(0,212,255,1) 100%);*/
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,34,121,1) 69%, rgba(0,212,255,1) 100%);
+}
+
+table{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    border-collapse: collapse;
+    border: 1px solid #373750;
+    border-radius: 10px;
+    /*border: 1px solid black;*/
+}
+
+thead{
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+th{
+    /*border: 1px solid blue;*/
+    text-align: center;
+    background-color: #373750;
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 20px;
+}
+
+td{
+    text-align: center;
+    padding: 8px;
+    color: #414246;
+}
+
+td:hover{
+    color: #0f0f0f;
+    cursor: pointer;
+}
+
+.col-1{
+    background-color: white
+}
+
+.col-1:hover{
+    background-color: #f3f3f3;
+}
+
+.col-2{
+    background-color: #f3f3f3;
+}
+
+.status-open div, .status-close div{
+   width: 50px;
+   margin: auto;
+   background-color: #01987a;
+   border-radius: 35% 10em 10%;
+   padding: 5px;
+   transition: 0.5s;
+   color: white;
+   font-size: 12px;
+}
+
+.status-open div{
+    background-color: #01987a;
+    border-radius: 35% 10em 10%;
+}
+
+.status-close div{
+    background-color: red;
+    border-radius: 25% 10%;
+}
+
+.status-open div:hover, .status-close div:hover{
+    transform: scale(1.2);
+ }
